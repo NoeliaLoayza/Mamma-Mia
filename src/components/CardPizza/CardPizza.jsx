@@ -1,15 +1,19 @@
 import styles from './CardPizza.module.css';
 import { formatMoney } from '../../utils/format';
 
-const CardPizza = ({ name, price, ingredients, img }) => {
+const CardPizza = ({ key, name, price, ingredients, img }) => {
   return (
-    <div className="card" style={{ width: '27rem' }}>
+    <div className="card" key={key} style={{ width: '27rem' }}>
       <img src={img} className="card-img-top" alt={name} />
       <div className="card-body">
         <h5 className="card-title">{name}</h5>
         <div className={styles.layoutText}>
           <p><strong>Ingredientes:</strong></p>
-          <span>🍕 {ingredients.join(', ')}</span>
+          <ul className="d-flex gap-2">🍕 
+            {ingredients.map((item, index) => (
+              <li className="list-group-item" key={index}> {item}</li>
+            ))}
+          </ul>
           <br />
           <p><strong>Precio:</strong> {formatMoney(price)}</p>
         </div>

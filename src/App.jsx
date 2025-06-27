@@ -1,8 +1,9 @@
 import Navbar from './components/Navbar/Navbar';
-import Home from './components/Home/Home';
+import Cart from './components/Cart/Cart';
 import Footer from './components/Footer/Footer';
-import RegisterPage from './pages/RegisterPage/RegisterPage';
-import LoginPage from './pages/LoginPage/LoginPage';
+// import Home from './components/Home/Home';
+// import RegisterPage from './pages/RegisterPage/RegisterPage';
+// import LoginPage from './pages/LoginPage/LoginPage';
 
 const App = () => {
   return (
@@ -10,7 +11,8 @@ const App = () => {
       <Navbar />
       {/* <Home /> */}
       {/* <RegisterPage /> */}
-      <LoginPage />
+      {/* <LoginPage /> */}
+      <Cart />
       <Footer />
     </div>
   );
