@@ -1,0 +1,12 @@
+.headerBackground {
+  background-image: url('../../assets/images/Header.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.hr {
+  margin: auto;
+  width: 70%;
+}
